@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>靴べらメーカー</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/card.css">
+</head>
+<body>
+    <nav id="sidebar">
+        <h1>靴べらメーカー</h1>
+        <ul class="menu-list">
+            <li><a href="#" onclick="showSection('Main')">Main</a></li>
+            <li><a href="#" onclick="toggleTheme()">Toggle Theme</a></li>
+            <li><a href="#" onclick="showSection('Credits')">Credits</a></li>
+        </ul>
+    </nav>
+    <main id="main">
+        <section id="Main" class="content-section">
+            <div class="grid">
+                <div class="card" onclick="Ctrl_woodDiv()">
+                    <div class="title">
+                        <img src="images/berame.jpg">
+                    </div>
+                    <h1>木状態</h1>
+                    <div id="woodDiv">
+                        <h2>年齢: 2歳</h2>
+                        <h2>性別: 無性別</h2>
+                        <h2>身長: 183cm</h2>
+                        <h2>体重: 2t</h2>
+                        <h2>誕生日: 2/5</h2>
+                        <h2>出身: 靴べら</h2>
+                        <h2>学位: 林学博士</h2>
+                        <a href="#" onclick="showSection('Wood')">詳細</a>
+                    </div>
+                </div>
+                <div class="card" onclick="Ctrl_humanDiv()">
+                    <div class="title">
+                        <img src="images/human.png">
+                    </div>
+                    <h1>人状態</h1>
+                    <div id="humanDiv">
+                        <h2>年齢: 24歳</h2>
+                        <h2>性別: 女性</h2>
+                        <h2>身長: 150cm</h2>
+                        <h2>体重: 42kg</h2>
+                        <h2>髪色: 白</h2>
+                        <h2>瞳色: 翠</h2>
+                        <h2>肌色: 白</h2>
+                        <h2>誕生日: 2/5</h2>
+                        <h2>出身: 靴べら</h2>
+                        <h2>学位: 林学博士</h2>
+                        <a href="#" onclick="showSection('Human')">詳細</a>
+                    </div>
+                </div>
+                <div class="card" onclick="showSection('bera')">
+                    <div class="title">
+                        <img src="images/bera.jpg">
+                    </div>
+                    <h1>芸術靴べら</h1>
+                </div>
+                <div class="card" onclick="showSection('parameter')">
+                    <h1>技能値</h1>
+                </div>
+                <div class="card" onclick="showSection('other')">
+                    <h1>その他</h1>
+                </div>
+                <div class="card" onclick="showSection('otherSettings')">
+                    <h1>べらめの個性</h1>
+                </div>
+            </div>
+        </section>
+        <section id="Wood" class="content-section">
+            <div class="grid">
+                <div class="card">
+                    <div class="title">
+                        <img src="images/berame.jpg">
+                    </div>
+                    <h1>木状態</h1>
+                </div>
+                <div class="card" onclick="Ctrl_woodStatus()">
+                    <h2>能力値</h2>
+                    <div id="woodStatus">
+                        <nav>
+                            <ul>
+                                <li><h3>STR: 12</h3></li>
+                                <li><h3>CON: 13</h3></li>
+                                <li><h3>POW: 12</h3></li>
+                                <li><h3>DEX: 11</h3></li>
+                                <li><h3>APP: 9</h3></li>
+                                <li><h3>SIZ: 15</h3></li>
+                                <li><h3>INT: 14</h3></li>
+                                <li><h3>EDU: 20</h3></li>
+                            </ul>
+                            <ul>
+                                <li><h3>HP :14</h3></li>
+                                <li><h3>MP: 12</h3></li>
+                                <li><h3>SAN: 60</h3></li>
+                                <li><h3>不定: 48</h3></li>
+                                <li><h3>IDE: 70</h3></li>
+                                <li><h3>幸運: 60</h3></li>
+                                <li><h3>知識: 100</h3></li>
+                                <li><h3>DB: +1d4</h3></li>
+                                <li><h3>耐久力: 14</h3></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="Human" class="content-section">
+            <div class="grid">
+                <div class="card">
+                    <div class="title">
+                        <img src="images/human.png">
+                    </div>
+                    <h2>人状態</h2>
+                </div>
+                <div class="card" onclick="Ctrl_humanStatus()">
+                    <h2>能力値</h2>
+                    <div id="humanStatus">
+                        <nav>
+                            <ul>
+                                <li><h3>STR: 12</h3></li>
+                                <li><h3>CON: 13</h3></li>
+                                <li><h3>POW: 12</h3></li>
+                                <li><h3>DEX: 15</h3></li>
+                                <li><h3>APP: 18</h3></li>
+                                <li><h3>SIZ: 11</h3></li>
+                                <li><h3>INT: 14</h3></li>
+                                <li><h3>EDU: 20</h3></li>
+                            </ul>
+                            <ul>
+                                <li><h3>HP :14</h3></li>
+                                <li><h3>MP: 12</h3></li>
+                                <li><h3>SAN: 60</h3></li>
+                                <li><h3>不定: 48</h3></li>
+                                <li><h3>IDE: 70</h3></li>
+                                <li><h3>幸運: 60</h3></li>
+                                <li><h3>知識: 100</h3></li>
+                                <li><h3>DB: 0</h3></li>
+                                <li><h3>耐久力: 12</h3></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="bera" class="content-section">
+        </section>
+        <section id="parameter" class="content-section">
+        </section>
+        <section id="other" class="content-section">
+        </section>
+        <section id="otherSettings" class="content-section">
+        </section>
+        <section id="Credits" class="content-section">
+            <h3>Credit</h3>
+            <p>靴べらメーカー</p>
+            <p>Github <a href="https://github.com/kado-kado/trpg" target="_blank">Repository</a></p>
+            <p>Made by <a href="https://github.com/kado-kado" target="_blank">@kado-kado</a></p>
+            <h4>Special Thanks</h4>
+            <p>Powered by <a href="https://fonts.google.com/specimen/Zen+Maru+Gothic" target="_blank">Google Fonts(Zen Maru Gothic)</a></p>
+            <p>Hosted source on <a href="https://github.com/" target="_blank">GitHub</a></p>
+            <p>Deployed by <a href="https://pages.cloudflare.com/" target="_blank">Cloudflare Pages</a></p>
+        </section>
+    </main>
+    <script src="script/change-mode.js"></script>
+    <script src="script/change-section.js"></script>
+    <script src="script/ctrl-humanDiv.js"></script>
+    <script src="script/ctrl-woodDiv.js"></script>
+    <script src="script/ctrl-humanStatus.js"></script>
+    <script src="script/ctrl-woodStatus.js"></script>
+</body>
+</html>

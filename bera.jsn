@@ -1,0 +1,36 @@
+{
+    "kind": "character",
+    "data": {
+        "name": "靴べら (くつべら)",
+        "initiative": 0,
+        "iconUrl": "https://storage.ccfolia-cdn.net/users/YHgr7NEh9RShEFDAUQevENAIGX92/files/f92c1f2a58de20dede5e9268a4fe3c8bc1a62b88f65f9689868fb5be8c57257e",
+        "faces": [
+            {
+                "iconUrl": "https://storage.ccfolia-cdn.net/users/YHgr7NEh9RShEFDAUQevENAIGX92/files/f92c1f2a58de20dede5e9268a4fe3c8bc1a62b88f65f9689868fb5be8c57257e",
+                "label": "靴べら"
+            },
+            {
+                "iconUrl": "https://storage.ccfolia-cdn.net/users/YHgr7NEh9RShEFDAUQevENAIGX92/files/7a24c9c61199e39a492aee473fadc525192d1fb077b04ac34ca0e48a93756606",
+                "label": "＞ 決定的成功/スペシャル"
+            },
+            {
+                "iconUrl": "https://storage.ccfolia-cdn.net/users/YHgr7NEh9RShEFDAUQevENAIGX92/files/56f52bac8475cf2e2e0479c97af71a11751d737969c0ffe30dc88c0caa7a1d0f",
+                "label": "＞ 成功"
+            },
+            {
+                "iconUrl": "https://storage.ccfolia-cdn.net/users/YHgr7NEh9RShEFDAUQevENAIGX92/files/fb362bc9e8422de62a39b0c4ca8ea287fd57c877b5ed6cddf0caa46e63edad21",
+                "label": "＞ スペシャル"
+            },
+            {
+                "iconUrl": "https://storage.ccfolia-cdn.net/users/YHgr7NEh9RShEFDAUQevENAIGX92/files/3dc9133a12c0682139d0e4f1cf487a4ec1472c9636eadb59aa2d3a6cd7af2b5c",
+                "label": "＞ 失敗"
+            },
+            {
+                "iconUrl": "https://storage.ccfolia-cdn.net/users/YHgr7NEh9RShEFDAUQevENAIGX92/files/fbd7896614556630d945d1f19478d821a5719af8e98ba0613123f7abaf57b860",
+                "label": "＞ 致命的失敗"
+            }
+        ],
+        "commands": "@靴べら\n--靴べらを使用--\nCCB<=442 【靴べら|回避|1<=f<=5,96<=c<=100】\nCCB<=100 【靴べら|回復(応急手当,医学,薬学)| 1<=f<=5,96<=c<=100】\nCCB<=100 【靴べら|目星(精神分析,目星,図書館,言いくるめ,信用)| 1<=f<=5,96<=c<=100】\nCCB<=95 【靴べら|マーシャルアーツ(キック,組み付き,こぶし,頭突き,マーシャルアーツ)| 1<=f<=5,96<=c<=100】\nCCB<=95 【靴べら|マーシャルアーツ(組み付き,頭突き)| 1<=f<=5,96<=c<=100】\nCCB<=100 【靴べら|追跡(隠す,忍び歩き,追跡,ナビゲート)| 1<=f<=5,96<=c<=100】\nCCB<=95 【靴べら|追跡(隠れる)| 1<=f<=5,96<=c<=100】\n",
+        "status": []
+    }
+}

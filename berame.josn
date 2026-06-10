@@ -1,0 +1,119 @@
+{
+    "kind": "character",
+    "data": {
+        "name": "靴べらメイカー (くつべらめいかー)",
+        "initiative": 11,
+        "externalUrl": "https://kado-kado.notion.site/33e49c84664580308a64cc31ab808692",
+        "iconUrl": "https://storage.ccfolia-cdn.net/users/YHgr7NEh9RShEFDAUQevENAIGX92/files/ff7d6e33e67e526b6ea0d96c473191e057af351843f389839f7dcfde363024ec",
+        "faces": [
+            {
+                "iconUrl": "https://storage.ccfolia-cdn.net/users/YHgr7NEh9RShEFDAUQevENAIGX92/files/ff7d6e33e67e526b6ea0d96c473191e057af351843f389839f7dcfde363024ec",
+                "label": "木"
+            },
+            {
+                "iconUrl": "https://storage.ccfolia-cdn.net/users/YHgr7NEh9RShEFDAUQevENAIGX92/files/f022fbc27cb4c59bf231aba4f3aa98ad4dc081105b9af35c6321146732485b8b",
+                "label": "人"
+            },
+            {
+                "iconUrl": "https://storage.ccfolia-cdn.net/users/YHgr7NEh9RShEFDAUQevENAIGX92/files/478e4ace04cf0a15e08807af7a6df3fe584ed1afb46c49781f5f3c11ca176189",
+                "label": "猫"
+            },
+            {
+                "iconUrl": "https://storage.ccfolia-cdn.net/users/YHgr7NEh9RShEFDAUQevENAIGX92/files/f92c1f2a58de20dede5e9268a4fe3c8bc1a62b88f65f9689868fb5be8c57257e",
+                "label": "靴べら"
+            }
+        ],
+        "secret": true,
+        "commands": "1d100<={SAN} 【正気度ロール】\nCCB<=70 【アイデア】\nCCB<=60 【幸運】\nCCB<=100 【知識】\n--靴べら--\nCCB<={靴べら} 【芸術（靴べら）】\nchoice[回避,回復,目星,マーシャルアーツ,追跡]\n:靴べら-5\n:靴べら-2\n--状態--\n@木\n@人\n@靴べら\n@猫\n--APT--\n1d3 APT消費回復\n1d6 靴べら吸収APT回復\n4d6 光合成(快晴)\n3d6 光合成(晴れ)\n2d6 光合成(曇り)\n1d6 光合成(雨)\n2d4 光合成(明るい)\n1d4 光合成(普通)\n--Status--\nCCB<={STR}*5 【STR × 5】\nCCB<={CON}*5 【CON × 5】\nCCB<={POW}*5 【POW × 5】\nCCB<={DEX}*5 【DEX × 5】\nCCB<={APP}*5 【APP × 5】\nCCB<={SIZ}*5 【SIZ × 5】\nCCB<={INT}*5 【INT × 5】\nCCB<={EDU}*5 【EDU × 5】\n--その他--\nCCB<=33 【目星】\nCCB<=25 【聞き耳】\nCCB<=25 【図書館】\nCCB<=32 【回避】\nCCB<=50 【こぶし（パンチ）】\nCCB<=25 【キック】\nCCB<=25 【組み付き】\nCCB<=10 【頭突き】\nCCB<=25 【投擲】\nCCB<=1 【マーシャルアーツ】\nCCB<=20 【拳銃】\nCCB<=15 【サブマシンガン】\nCCB<=30 【ショットガン】\nCCB<=15 【マシンガン】\nCCB<=25 【ライフル】\nCCB<=30 【応急手当】\nCCB<=1 【鍵開け】\nCCB<=15 【隠す】\nCCB<=10 【隠れる】\nCCB<=10 【忍び歩き】\nCCB<=10 【写真術】\nCCB<=1 【精神分析】\nCCB<=10 【追跡】\nCCB<=40 【登攀】\nCCB<=20 【運転】\nCCB<=20 【機械修理】\nCCB<=1 【重機械操作】\nCCB<=5 【乗馬】\nCCB<=25 【水泳】\nCCB<=5 【製作】\nCCB<=1 【操縦】\nCCB<=25 【跳躍】\nCCB<=10 【電気修理】\nCCB<=10 【ナビゲート】\nCCB<=1 【変装】\nCCB<=50 【リロード(電気銃専用)】\nCCB<=5 【言いくるめ】\nCCB<=15 【信用】\nCCB<=15 【説得】\nCCB<=5 【値切り】\nCCB<=100 【母国語】\nCCB<=5 【医学】\nCCB<=5 【オカルト】\nCCB<=1 【化学】\nCCB<=0 【クトゥルフ神話】\nCCB<=10 【経理】\nCCB<=1 【考古学】\nCCB<=1 【コンピューター】\nCCB<=5 【心理学】\nCCB<=1 【人類学】\nCCB<=1 【生物学】\nCCB<=1 【地質学】\nCCB<=1 【電子工学】\nCCB<=1 【天文学】\nCCB<=10 【博物学】\nCCB<=1 【物理学】\nCCB<=5 【法律】\nCCB<=1 【薬学】\nCCB<=20 【歴史】\n1d3+1D4 【ダメージ判定】\n1d4+1D4 【ダメージ判定】\n1d6+1D4 【ダメージ判定】 \n",
+        "status": [
+            {
+                "label": "HP",
+                "value": 14,
+                "max": 14
+            },
+            {
+                "label": "MP",
+                "value": 12,
+                "max": 12
+            },
+            {
+                "label": "SAN",
+                "value": 61,
+                "max": 61
+            },
+            {
+                "label": "APT",
+                "value": 10,
+                "max": 99
+            },
+            {
+                "label": "靴べら",
+                "value": 442,
+                "max": 545
+            },
+            {
+                "label": "回避",
+                "value": 0,
+                "max": 10
+            },
+            {
+                "label": "回復",
+                "value": 0,
+                "max": 10
+            },
+            {
+                "label": "目星",
+                "value": 0,
+                "max": 10
+            },
+            {
+                "label": "マーシャルアーツ",
+                "value": 2,
+                "max": 10
+            },
+            {
+                "label": "追跡",
+                "value": 0,
+                "max": 10
+            }
+        ],
+        "params": [
+            {
+                "label": "STR",
+                "value": 12
+            },
+            {
+                "label": "CON",
+                "value": 13
+            },
+            {
+                "label": "POW",
+                "value": 12
+            },
+            {
+                "label": "DEX",
+                "value": 11
+            },
+            {
+                "label": "APP",
+                "value": 9
+            },
+            {
+                "label": "SIZ",
+                "value": 15
+            },
+            {
+                "label": "INT",
+                "value": 14
+            },
+            {
+                "label": "EDU",
+                "value": 20
+            },
+            {
+                "label": "URL",
+                "value": "https://kado-kado.notion.site/33e49c84664580308a64cc31ab808692"
+            }
+        ]
+    }
+}
