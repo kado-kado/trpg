@@ -4,11 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>靴べらメーカー</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/main.css">
     <link rel="stylesheet" href="style/card.css">
+                        
 </head>
 <body>
     <nav id="sidebar">
@@ -22,10 +20,8 @@
     <main id="main">
         <section id="Main" class="content-section">
             <div class="grid">
-                <div class="card" onclick="Ctrl_woodDiv()">
-                    <div class="title">
-                        <img src="images/berame.jpg">
-                    </div>
+                <div class="card" onclick="Ctrl_div('woodDiv')">
+                    <div class="title"><img src="images/berame.jpg"></div>
                     <h1>木状態</h1>
                     <div id="woodDiv">
                         <h2>年齢: 2歳</h2>
@@ -38,40 +34,23 @@
                         <a href="#" onclick="showSection('Wood')">詳細</a>
                     </div>
                 </div>
-                <div class="card" onclick="Ctrl_humanDiv()">
-                    <div class="title">
-                        <img src="images/human.png">
-                    </div>
+                <div class="card" onclick="Ctrl_div('humanDiv')">
+                    <div class="title"><img src="images/human.png"></div>
                     <h1>人状態</h1>
                     <div id="humanDiv">
-                        <h2>年齢: 24歳</h2>
-                        <h2>性別: 女性</h2>
-                        <h2>身長: 150cm</h2>
-                        <h2>体重: 42kg</h2>
-                        <h2>髪色: 白</h2>
-                        <h2>瞳色: 翠</h2>
-                        <h2>肌色: 白</h2>
-                        <h2>誕生日: 2/5</h2>
-                        <h2>出身: 靴べら</h2>
-                        <h2>学位: 林学博士</h2>
+                        <h2>年齢: 24歳</h2><h2>性別: 女性</h2><h2>身長: 150cm</h2><h2>体重: 42kg</h2>
+                        <h2>髪色: 白</h2><h2>瞳色: 翠</h2><h2>肌色: 白</h2><h2>誕生日: 2/5</h2>
+                        <h2>出身: 靴べら</h2><h2>学位: 林学博士</h2>
                         <a href="#" onclick="showSection('Human')">詳細</a>
                     </div>
                 </div>
                 <div class="card" onclick="showSection('bera')">
-                    <div class="title">
-                        <img src="images/bera.jpg">
-                    </div>
+                    <div class="title"><img src="images/bera.jpg"></div>
                     <h1>芸術靴べら</h1>
                 </div>
-                <div class="card" onclick="showSection('parameter')">
-                    <h1>技能値</h1>
-                </div>
-                <div class="card" onclick="showSection('other')">
-                    <h1>その他</h1>
-                </div>
-                <div class="card" onclick="showSection('otherSettings')">
-                    <h1>べらめの個性</h1>
-                </div>
+                <div class="card" onclick="showSection('parameter')"><h1>技能値</h1></div>
+                <div class="card" onclick="showSection('other')"><h1>その他</h1></div>
+                <div class="card" onclick="showSection('otherSettings')"><h1>べらめの個性</h1></div>
             </div>
         </section>
         <section id="Wood" class="content-section">
@@ -82,7 +61,7 @@
                     </div>
                     <h1>木状態</h1>
                 </div>
-                <div class="card" onclick="Ctrl_woodStatus()">
+                <div class="card" onclick="Ctrl_div('woodStatus')">
                     <h2>能力値</h2>
                     <div id="woodStatus">
                         <nav>
@@ -99,7 +78,7 @@
                             <ul>
                                 <li><h3>HP :14</h3></li>
                                 <li><h3>MP: 12</h3></li>
-                                <li><h3>SAN: 60</h3></li>
+                                <li><h3>SAN: 76</h3></li>
                                 <li><h3>不定: 48</h3></li>
                                 <li><h3>IDE: 70</h3></li>
                                 <li><h3>幸運: 60</h3></li>
@@ -120,7 +99,7 @@
                     </div>
                     <h2>人状態</h2>
                 </div>
-                <div class="card" onclick="Ctrl_humanStatus()">
+                <div class="card" onclick="Ctrl_div('humanStatus')">
                     <h2>能力値</h2>
                     <div id="humanStatus">
                         <nav>
@@ -137,7 +116,7 @@
                             <ul>
                                 <li><h3>HP :14</h3></li>
                                 <li><h3>MP: 12</h3></li>
-                                <li><h3>SAN: 60</h3></li>
+                                <li><h3>SAN: 76</h3></li>
                                 <li><h3>不定: 48</h3></li>
                                 <li><h3>IDE: 70</h3></li>
                                 <li><h3>幸運: 60</h3></li>
@@ -151,12 +130,270 @@
             </div>
         </section>
         <section id="bera" class="content-section">
+            <div class="grid">
+                <div class="card">
+                    <h1>芸術くつべらについて</h1>
+                    <p>靴べらを生み出すことができる。</p>
+                    <p>また、既存の物質を靴べらに変えることもできる。</p>
+                    <p>技能値の増減はない。</p>
+                </div>
+                <div class="card" onclick="Ctrl_div('beraKind')">
+                    <h1>靴べらの種類</h1>
+                    <div id="beraKind">
+                        <nav>
+                            <ul>
+                                <li><h2>効果のある靴べら</h2><p>靴べらメーカー専用</p></li>
+                                <li><h2>靴べら</h2><p>アーティファクト化</p></li>
+                                <li><h2>靴べら</h2><p>普通の靴べら</p></li>
+                            </ul>
+                        </nav>
+                        <p>効果のある靴べらを使用することができるのは、靴べらメーカーのみである。</p>
+                        <p>靴べらメーカー以外は、アーティファクト化されている靴べらか普通の靴べらの2つが使用可能である。</p>
+                    </div>
+                </div>
+                <div class="card" onclick="Ctrl_div('beraRestriction')">
+                    <h1>芸術靴べらの制約</h1>
+                    <div id="beraRestriction">
+                        <p>1ターンに生み出すことのできる靴べらは、5ポイントまでである。</p>
+                        <nav>
+                            <ul>
+                                <li><h2>効果のある靴べら</h2><p>5ポイント</p></li>
+                                <li><h2>アーティファクト化された靴べら</h2><p>2ポイント</p></li>
+                                <li><h2>靴べら</h2><p>1ポイント</p></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="card" onclick="Ctrl_div('beraDetails1')">
+                    <h1>芸術靴べらの特殊効果</h1>
+                    <div id="beraDetails1">
+                        <p>効果のある靴べらを召喚することができる。</p>
+                        <p>召喚する際に芸術靴べらの技能値を5減少させる。</p>
+                        <p>1d5の出目に応じて以下の効果のある靴べらが召喚される。</p>
+                        <nav>
+                            <ul>
+                                <li><h2>1: 回避</h2></li>
+                                <li><h2>2: 回復</h2></li>
+                                <li><h2>3: 目星</h2></li>
+                                <li><h2>4: マーシャルアーツ</h2></li>
+                                <li><h2>5: 追跡</h2></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="card" onclick="Ctrl_div('beraDetails2')">
+                    <h1>芸術靴べらの特殊効果</h1>
+                    <div id="beraDetails2">
+                        <p>アーティファクト化された靴べらを召喚することができる。</p>
+                        <p>召喚する際に芸術靴べらの技能値を2減少させる。</p>
+                        <p>1d5の出目に応じて以下のアーティファクト化された靴べらが召喚される。</p>
+                        <nav>
+                            <ul>
+                                <li><h2>1: 回避</h2></li>
+                                <li><h2>2: 回復</h2></li>
+                                <li><h2>3: 目星</h2></li>
+                                <li><h2>4: マーシャルアーツ</h2></li>
+                                <li><h2>5: 追跡</h2></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="card" onclick="Ctrl_div('beraCF')">
+                    <h1>クリティカル/ファンブル</h1>
+                    <div id="beraCF">
+                        <h2>芸術靴べらでファンブルした場合</h2>
+                        <p>芸術靴べらの技能値を100増加させる。</p>
+                        <h2>芸術靴べらでクリティカルした場合</h2>
+                        <p>既存にある靴べらをすべて破壊する。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <h1>靴べらの吸収</h1>
+                    <p>靴べらを吸収すると、ATPを1d6回復する。</p>
+                </div>
+                <div class="card">
+                    <h1>靴べらの状態</h1>
+                    <p>現在のシナリオで作成した靴べらはアクティブ、それ以外はコールド。コールド化した靴べらは宣言でアクティブ化できる。</p>
+                </div>
+                <div class="card">
+                    <h1>効果のある靴べらの使用</h1>
+                    <p>回避、回復、目星、マーシャルアーツ、追跡の効果を使用できる。使用時は1〜5がファンブル、96〜100がクリティカル。</p>
+                    <p>マーシャルアーツはDB +1d6。人状態では同時に2本まで使用できる。</p>
+                </div>
+                <div class="card">
+                    <h1>アーティファクト化された靴べら</h1>
+                    <p>回避・回復・目星・マーシャルアーツ・追跡に、それぞれ +33d3の補正を受ける。</p>
+                    <p>所有者が戦闘でファンブルすると破壊され、所有者は1ダメージ。譲渡品とコールド化した靴べらは除く。</p>
+                </div>
+                <div class="card">
+                    <h1>普通の靴べら</h1>
+                    <p>攻撃時に1d3 + DBのダメージを与える。</p>
+                </div>
+            </div>
         </section>
         <section id="parameter" class="content-section">
+            <div class="grid">
+                <div class="card">
+                    <h1>技能値</h1>
+                    <p>職業ポイント: 400　興味ポイント: 140</p>
+                    <p>木状態・人状態 共通</p>
+                </div>
+                <div class="card">
+                    <h2>戦闘技能</h2>
+                    <table>
+                        <thead><tr><th>技能名</th><th>初期</th><th>成長</th><th>合計</th></tr></thead>
+                        <tbody>
+                            <tr><td>回避</td><td>22</td><td>15</td><td>37</td></tr>
+                            <tr><td>キック</td><td>25</td><td>-</td><td>25</td></tr>
+                            <tr><td>組み付き</td><td>25</td><td>-</td><td>25</td></tr>
+                            <tr><td>こぶし(パンチ)</td><td>50</td><td>-</td><td>50</td></tr>
+                            <tr><td>頭突き</td><td>10</td><td>-</td><td>10</td></tr>
+                            <tr><td>投擲</td><td>25</td><td>-</td><td>25</td></tr>
+                            <tr><td>マーシャルアーツ</td><td>1</td><td>-</td><td>1</td></tr>
+                            <tr><td>拳銃</td><td>20</td><td>-</td><td>20</td></tr>
+                            <tr><td>サブマシンガン</td><td>15</td><td>-</td><td>15</td></tr>
+                            <tr><td>ショットガン</td><td>30</td><td>-</td><td>30</td></tr>
+                            <tr><td>マシンガン</td><td>15</td><td>-</td><td>15</td></tr>
+                            <tr><td>ライフル</td><td>25</td><td>-</td><td>25</td></tr>
+                            <tr><td>電気銃リロード</td><td>50</td><td>-</td><td>50</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="card">
+                    <h2>探索・行動技能</h2>
+                    <table>
+                        <thead><tr><th>技能名</th><th>初期</th><th>成長</th><th>合計</th></tr></thead>
+                        <tbody>
+                            <tr><td>応急手当</td><td>30</td><td>-</td><td>30</td></tr>
+                            <tr><td>鍵開け</td><td>1</td><td>-</td><td>1</td></tr>
+                            <tr><td>隠す / 隠れる</td><td>15 / 10</td><td>-</td><td>15 / 10</td></tr>
+                            <tr><td>聞き耳</td><td>25</td><td>-</td><td>25</td></tr>
+                            <tr><td>忍び歩き</td><td>10</td><td>-</td><td>10</td></tr>
+                            <tr><td>写真術</td><td>10</td><td>-</td><td>10</td></tr>
+                            <tr><td>精神分析</td><td>1</td><td>-</td><td>1</td></tr>
+                            <tr><td>追跡</td><td>10</td><td>-</td><td>10</td></tr>
+                            <tr><td>登攀</td><td>40</td><td>-</td><td>40</td></tr>
+                            <tr><td>図書館</td><td>25</td><td>1</td><td>26</td></tr>
+                            <tr><td>目星</td><td>25</td><td>10</td><td>35</td></tr>
+                            <tr><td>運転 / 機械修理</td><td>20 / 20</td><td>-</td><td>20 / 20</td></tr>
+                            <tr><td>重機械操作</td><td>1</td><td>-</td><td>1</td></tr>
+                            <tr><td>乗馬</td><td>5</td><td>-</td><td>5</td></tr>
+                            <tr><td>水泳</td><td>25</td><td>-</td><td>25</td></tr>
+                            <tr><td>制作 / 跳躍</td><td>5 / 25</td><td>-</td><td>5 / 25</td></tr>
+                            <tr><td>操作 / 電気修理</td><td>1 / 10</td><td>-</td><td>1 / 10</td></tr>
+                            <tr><td>ナビゲート / 変装</td><td>10 / 1</td><td>-</td><td>10 / 1</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="card">
+                    <h2>交渉・知識技能</h2>
+                    <p>交渉技能は人状態でないと自動失敗。</p>
+                    <table>
+                        <thead><tr><th>技能名</th><th>合計</th></tr></thead>
+                        <tbody>
+                            <tr><td>言いくるめ / 信用 / 説得 / 値切り</td><td>5 / 15 / 15 / 5</td></tr>
+                            <tr><td>母国語 (日本語)</td><td>100</td></tr>
+                            <tr><td>医学 / オカルト / 化学</td><td>5 / 5 / 1</td></tr>
+                            <tr><td>クトゥルフ神話</td><td>3</td></tr>
+                            <tr><td>芸術 (靴べら)</td><td>448</td></tr>
+                            <tr><td>経理 / 考古学 / コンピューター</td><td>10 / 1 / 1</td></tr>
+                            <tr><td>心理学 / 人類学 / 生物学 / 地質学</td><td>5 / 1 / 1 / 1</td></tr>
+                            <tr><td>電子工学 / 天文学</td><td>1 / 1</td></tr>
+                            <tr><td>博物学 / 物理学 / 法律 / 薬学 / 歴史</td><td>10 / 1 / 5 / 1 / 20</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         </section>
         <section id="other" class="content-section">
+            <div class="grid">
+                <div class="card" onclick="Ctrl_div('weaponDetails')">
+                    <h1>電気銃</h1>
+                    <div id="weaponDetails">
+                        <p>成功率: (110 - 10n)%　ダメージ: 1回につき nd5</p>
+                        <p>nは1〜10。1ターンに1回攻撃。ターン開始時に電気銃リロード判定を行い、失敗時はダメージ半減。クリティカル・ファンブルなし。</p>
+                    </div>
+                </div>
+                <div class="card" onclick="Ctrl_div('moneyDetails')">
+                    <h1>収入と財産</h1>
+                    <div id="moneyDetails">
+                        <p>収入: 1シナリオにつき木の葉5枚</p>
+                        <p>手持ち現金: 1,080,000　預金: 120,000,000</p>
+                        <p>個人資産・不動産: なし</p>
+                    </div>
+                </div>
+                <div class="card" onclick="Ctrl_div('itemDetails')">
+                    <h1>所持品・アーティファクト</h1>
+                    <div id="itemDetails">
+                        <ul>
+                            <li>マーシャルアーツ ×1</li>
+                            <li>水のマーシャルアーツ ×1 (米田・R・米山の形見)</li>
+                            <li>緑色の綺麗な宝石 ×1 (MP+10、10万円相当、使用済み)</li>
+                            <li>怪談白サイコロ ×1</li>
+                            <li>魔法の羽、運命の100面ダイス、証明写真</li>
+                            <li>魔術本「被害をそらす」</li>
+                            <li>「クトゥルフの招来/退散/従属」</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card" onclick="Ctrl_div('encounterDetails')">
+                    <h1>遭遇した存在</h1>
+                    <div id="encounterDetails">
+                        <p>ショゴス ×14、ゴル=ゴロス ×1、アザトース ×1、シュブ=ニグラス ×1、稲荷 ×1</p>
+                    </div>
+                </div>
+                <div class="card" onclick="Ctrl_div('scenarioDetails')">
+                    <h1>通過したシナリオ</h1>
+                    <div id="scenarioDetails">
+                        <table>
+                            <thead><tr><th>シナリオ</th><th>結果</th><th>記録・報酬</th></tr></thead>
+                            <tbody>
+                                <tr><td>絶対初期値的な技能に成功しないと出られない部屋</td><td>クリア</td><td>遺体を目星べらにした</td></tr>
+                                <tr><td>絶望の孤島</td><td>ロスト ※ロストではない</td><td>靴べら5つで自身を召喚</td></tr>
+                                <tr><td>にゃんこ事件真っ最中</td><td>クリア</td><td>緑色の綺麗な宝石</td></tr>
+                                <tr><td>狂気山脈 / ショゴス狩り</td><td>クリア</td><td>ショゴス14体、電気銃ほか</td></tr>
+                                <tr><td>チャイルド・リプレイ</td><td>クリア</td><td>ゴル=ゴロス、SAN値回復</td></tr>
+                                <tr><td>腹が…減った…</td><td>クリア</td><td>SAN値・芸術靴べら回復</td></tr>
+                                <tr><td>間もなく最終電車が出発します。</td><td>クリア</td><td>SAN値回復、運命のダイス</td></tr>
+                                <tr><td>稲荷の村</td><td>クリア</td><td>SAN値回復</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
         </section>
         <section id="otherSettings" class="content-section">
+            <div class="grid">
+                <div class="card">
+                    <h1>靴べらメーカーの特性</h1>
+                    <h2>目星を振られた場合</h2>
+                    <p>情報公開に自動成功し、SAN値チェック 1d6/1d20。</p>
+                    <h2>状態変化</h2>
+                    <p>木、人、靴べら、猫などへ変身できる。ATPを1追加消費すれば擬人化でき、擬人化時のみ交渉技能を使用可能。</p>
+                </div>
+                <div class="card">
+                    <h1>ATP</h1>
+                    <p>生命活動のエネルギー。初期値は 1d100 + 10。存在中は天候・光量以外に左右されず光合成する。</p>
+                    <table>
+                        <thead><tr><th>環境</th><th>条件</th><th>回復</th></tr></thead>
+                        <tbody>
+                            <tr><td>屋外</td><td>快晴 / 晴れ / 曇り / 雨 / その他</td><td>4d6 / 3d6 / 2d6 / 1d6 / 0</td></tr>
+                            <tr><td>屋内</td><td>明るい / 普通 / 暗い</td><td>2d4 / 1d4 / 0</td></tr>
+                        </tbody>
+                    </table>
+                    <p>毎ターン1消費。木・靴べら以外の状態では追加で1消費。0になるとHPが毎ターン1減少。</p>
+                </div>
+                <div class="card">
+                    <h1>ATPの使用</h1>
+                    <ul>
+                        <li>自分のHP: 1d3 ATPで1回復。1ターン20まで。</li>
+                        <li>ショック・仮死状態: 1ターン50まで。</li>
+                        <li>他PCのHP: ATP 1でHP 1回復。</li>
+                        <li>PC以外: 一度に回復できる上限なし。</li>
+                        <li>ショック・仮死・死亡時は、ATPを全て使ってでもHPを回復する。</li>
+                    </ul>
+                </div>
+            </div>
         </section>
         <section id="Credits" class="content-section">
             <h3>Credit</h3>
@@ -171,9 +408,6 @@
     </main>
     <script src="script/change-mode.js"></script>
     <script src="script/change-section.js"></script>
-    <script src="script/ctrl-humanDiv.js"></script>
-    <script src="script/ctrl-woodDiv.js"></script>
-    <script src="script/ctrl-humanStatus.js"></script>
-    <script src="script/ctrl-woodStatus.js"></script>
+    <script src="script/ctrlDiv.js"></script>
 </body>
 </html>

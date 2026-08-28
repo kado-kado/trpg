@@ -1,11 +1,11 @@
 :root {
-    --bg: #f4f1e8;              /* 木材っぽい明るい背景 */
-    --text: #2f6b3d;            /* ダークブラウン */
+    --bg: #f4f1e8;
+    --text: #2f6b3d;
 
     --main-bg: #faf8f2;
     --sidebar-bg: #e8dfcf;
 
-    --link: #2f6b3d;            /* 森林グリーン */
+    --link: #2f6b3d;
     --link-hover: #1f4d2b;
 
     --input-bg: #efe7d8;
@@ -16,13 +16,13 @@
 }
 
 [data-theme="dark"] {
-    --bg: #0f1712;              /* 深い森 */
+    --bg: #0f1712;
     --text: #d7dfd1;
 
     --main-bg: #18211b;
     --sidebar-bg: #1f2a22;
 
-    --link: #8fcf9d;            /* 明るい葉色 */
+    --link: #8fcf9d;
     --link-hover: #b4e3bf;
 
     --input-bg: #263228;
@@ -52,6 +52,7 @@ body {
     display: flex;
     overflow: hidden;
     font-family: "Kajuden", serif;
+    font-size: 18px;
     background-color: var(--bg);
     color: var(--text);
     transition: background-color 0.3s, color 0.3s;
@@ -178,4 +179,30 @@ a:active {
     #main {
         padding: 1rem;
     }
+}
+
+p,
+li,
+td,
+th {
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+    text-align: left;
+}
+
+th,
+td {
+    border: 1px solid var(--input-border);
+    padding: 8px 10px;
+}
+
+th {
+    background-color: var(--input-bg);
+    white-space: nowrap;
 }

@@ -8,7 +8,7 @@ img {
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(350px, 100%), 1fr));
     gap: 24px;
     max-width: 100%;
     margin: 0 auto;
@@ -21,6 +21,7 @@ img {
     padding: 28px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.05);
     transition: all 0.2s ease;
+    align-items: left;
 }
 
 .card_nodom {
@@ -49,5 +50,4 @@ ul{
 
 nav {
     display: flex;
-    align-items: flex-start;
 }
