@@ -1,7 +1,5 @@
 const collapsibleIds = [
-	"beraKind", "beraRestriction", "beraDetails1", "beraDetails2", "beraCF",
-	"woodStatus", "woodDiv", "humanStatus", "humanDiv", "weaponDetails",
-	"moneyDetails", "itemDetails", "encounterDetails", "scenarioDetails"
+	"beraKind", "beraRestriction", "beraDetails1", "beraDetails2", "beraCritical", "beraFumble", "beraATP", "beraState", "useAffectbera", "aboutAFbera", "normalbera", "woodStatus", "woodDiv", "humanStatus", "humanDiv", "weaponDetails", "moneyDetails", "itemDetails", "encounterDetails", "scenarioDetails", "TRberame", "CHberame", "berameATP", "useATP", "STbera"
 ];
 
 collapsibleIds.forEach((divId) => {
@@ -9,14 +7,10 @@ collapsibleIds.forEach((divId) => {
 	if (targetDiv) targetDiv.style.display = "none";
 });
 
+function Ctrl_div(divId) {
+	const targetDiv = document.getElementById(divId);
+	if (!targetDiv) return;
 
-function Ctrl_div(divId){
-	const targetDivId = document.getElementById(divId);
-	if (!targetDivId) return;
-
-	if(targetDivId.style.display=="block"){
-		targetDivId.style.display ="none";
-	}else{
-		targetDivId.style.display ="block";
-	}
+	const isVisible = targetDiv.style.display === "block" || targetDiv.style.display === "flex";
+	targetDiv.style.display = isVisible ? "none" : "block";
 }
