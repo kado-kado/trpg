@@ -22,6 +22,7 @@
             <ul class="menu-list">
                 <li><a href="#" data-card-action="section" data-section-id="Main" onclick="handleCardAction(this, event)">Home</a></li>
                 <li><a href="#" onclick="toggleTheme(); return false;">Toggle Theme</a></li>
+                <li><a href="./loves/">Raguni</a></li>
                 <li><a href="#" data-card-action="section" data-section-id="Credits" onclick="handleCardAction(this, event)">Credits</a></li>
             </ul>
         </div>
@@ -58,6 +59,7 @@
                     <h1>靴べらメーカーとは</h1>
                     <p>靴べらを作成するPCのこと。</p>
                     <p>略称は、べらめ</p>
+                    <p>シュブ=ニグラスのラグニが彼女である。</p>
                 </div>
             </div>
         </section>
@@ -93,8 +95,8 @@
                             <ul>
                                 <li><h3>HP :14</h3></li>
                                 <li><h3>MP: 12</h3></li>
-                                <li><h3>SAN: 76</h3></li>
-                                <li><h3>不定: 48</h3></li>
+                                <li><h3>SAN: 94</h3></li>
+                                <li><h3>不定: 75</h3></li>
                                 <li><h3>IDE: 70</h3></li>
                                 <li><h3>幸運: 60</h3></li>
                                 <li><h3>知識: 100</h3></li>
@@ -143,8 +145,8 @@
                             <ul>
                                 <li><h3>HP :14</h3></li>
                                 <li><h3>MP: 12</h3></li>
-                                <li><h3>SAN: 76</h3></li>
-                                <li><h3>不定: 48</h3></li>
+                                <li><h3>SAN: 94</h3></li>
+                                <li><h3>不定: 75</h3></li>
                                 <li><h3>IDE: 70</h3></li>
                                 <li><h3>幸運: 60</h3></li>
                                 <li><h3>知識: 100</h3></li>
@@ -191,6 +193,7 @@
                             </tbody>
                         </table>
                         <p>毎ターン1消費。木・靴べら以外の状態では追加で1消費。0になるとHPが毎ターン1減少。</p>
+                        <p>人間の食事をとる場合、10ターンに100 + 1d100ATPが回復する。</p>
                     </div>
                 </div>
                 <div class="card" data-card-action="toggle" data-toggle-target="useATP" onclick="handleCardAction(this, event)">
@@ -337,7 +340,7 @@
                     <table>
                         <thead><tr><th>技能名</th><th>初期</th><th>割振</th><th>他</th><th>合計</th></tr></thead>
                         <tbody>
-                            <tr><td>芸術（靴べら）</td><td>5</td><td>540</td><td>-97</td><td>448</td></tr>
+                            <tr><td>芸術（靴べら）</td><td>5</td><td>540</td><td>-128</td><td>417</td></tr>
                         </tbody>
                     </table>
                 </div>
@@ -368,7 +371,7 @@
                         <thead><tr><th>技能名</th><th>初期</th><th>成長</th><th>合計</th></tr></thead>
                         <tbody>
                             <tr><td>応急手当</td><td>30</td><td>-</td><td>30</td></tr>
-                            <tr><td>鍵開け</td><td>1</td><td>-</td><td>1</td></tr>
+                            <tr><td>鍵開け</td><td>1</td><td>5</td><td>6</td></tr>
                             <tr><td>隠す</td><td>15</td><td>-</td><td>15</td></tr>
 			    <tr><td>隠れる</td><td>10</td><td>-</td><td>10</td></tr>
                             <tr><td>聞き耳</td><td>25</td><td>-</td><td>25</td></tr>
@@ -378,7 +381,7 @@
                             <tr><td>追跡</td><td>10</td><td>-</td><td>10</td></tr>
                             <tr><td>登攀</td><td>40</td><td>-</td><td>40</td></tr>
                             <tr><td>図書館</td><td>25</td><td>1</td><td>26</td></tr>
-                            <tr><td>目星</td><td>25</td><td>10</td><td>35</td></tr>
+                            <tr><td>目星</td><td>25</td><td>11</td><td>36</td></tr>
 			</tbody>
                 </table>
             </div>
@@ -535,7 +538,7 @@
                         <table>
                             <thead><tr><th>メモ</th></tr></thead>
                             <tbody>
-                                <tr><td>『ふんぐるい むぐるうなふ くとぅぐあ ふぉまるはうと んがあ・ぐあ なふるたぐん いあ！ くとぅぐあ!』と2回唱え、MPとSUN値を1d10消費してシュブ=ニグラスを招来することができる。そしてSUNチェックは招来させた本人は発生せず自分が招来させている間自分に従属させることができる。1d5ターンたつと勝手に退散する。</td></tr>
+                                <tr><td>『ふんぐるい むぐるうなふ くとぅぐあ ふぉまるはうと んがあ・ぐあ なふるたぐん いあ！ くとぅぐあ!』と2回唱え、MPとSUN値を1d10消費してシュブ=ニグラスを招来することができる。そしてSUNチェックは招来させた本人は発生せず自分が招来させている間自分に従属させることができる。1d5ターンたつと勝手に退散する。(召喚されるのはヨグ=ソトース)※アザトースです。1d100で対象が変わる。</td></tr>
                             </tbody>
                         </table>
                         <table>
@@ -565,13 +568,13 @@
                         <table>
                             <thead><tr><th>名称</th><th>個数</th></tr></thead>
                             <tbody>
-                                <tr><td>運命の100面ダイス</td><td>x1</td></tr>
+                                <tr><td>運命の100面ダイスの残骸</td><td>x1</td></tr>
                             </tbody>
                         </table>
                         <table>
                             <thead><tr><th>メモ</th></tr></thead>
                             <tbody>
-                                <tr><td>COC のセッションにおいて一度だけ判定をやり直すことが出来る。一度使うと粉々に砕けてしまうだろう。オリジナルのAFなので持込みは各KPに確認が必要。</td></tr>
+                                <tr><td>COC のセッションにおいて一度だけ判定をやり直すことが出来る。一度使うと粉々に砕けてしまうだろう。オリジナルのAFなので持込みは各KPに確認が必要。※既に使用済みで壊れた。</td></tr>
                             </tbody>
                         </table>
                         <table>
@@ -584,6 +587,78 @@
                             <thead><tr><th>メモ</th></tr></thead>
                             <tbody>
                                 <tr><td>べらめ人状態の証明書。App20の証明写真。</td></tr>
+                            </tbody>
+                        </table>
+                        <table>
+                            <thead><tr><th>名称</th><th>個数</th></tr></thead>
+                            <tbody>
+                                <tr><td>天候の数珠</td><td>x1</td></tr>
+                            </tbody>
+                        </table>
+                        <table>
+                            <thead><tr><th>メモ</th></tr></thead>
+                            <tbody>
+                                <tr><td>呪文: 天候を変える。を取得する。また、この数珠をつけている限り、マジックポイント10につきレベル2の天候変化が行える。</td></tr>
+                            </tbody>
+                        </table>
+                        <table>
+                            <thead><tr><th>名称</th><th>個数</th></tr></thead>
+                            <tbody>
+                                <tr><td>魔術写しの短刀</td><td>x1</td></tr>
+                            </tbody>
+                        </table>
+                        <table>
+                            <thead><tr><th>メモ</th></tr></thead>
+                            <tbody>
+                                <tr><td>この短刀で術者を刺し命を奪うことで、術者が持っていた呪文をどれでも一つ短刀に移すことができるアーティファクト。術を奪えるのは一回のみ。なお、このアイテムはAFなので幽体の探索者でも持つことが可能。時雨の中にあった天候を変えるを吸収している。</td></tr>
+                            </tbody>
+                        </table>
+                        <table>
+                            <thead><tr><th>名称</th><th>個数</th></tr></thead>
+                            <tbody>
+                                <tr><td>注射: 死者からの忠誠</td><td>x1</td></tr>
+                            </tbody>
+                        </table>
+                        <table>
+                            <thead><tr><th>メモ</th></tr></thead>
+                            <tbody>
+                                <tr><td>1回のみ、死体に注射すると自身の駒にすることができる。2d5ターンの間、思いのまま動かすことができる。2d5ターン後、死体は灰になって消える。</td></tr>
+                            </tbody>
+                        </table>
+                        <table>
+                            <thead><tr><th>名称</th><th>個数</th></tr></thead>
+                            <tbody>
+                                <tr><td>魔術本: 過剰の回復</td><td>-</td></tr>
+                            </tbody>
+                        </table>
+                        <table>
+                            <thead><tr><th>メモ</th></tr></thead>
+                            <tbody>
+                                <tr><td>HPが最大値の相手に1ポイント以上の回復を与えると、回復値の最大3倍のダメージを与えることができる。ただし、この魔術本によるダメージでは対象の最大HPの50%を超えてダメージを与えられない。</td></tr>
+                            </tbody>
+                        </table>
+                        <table>
+                            <thead><tr><th>名称</th><th>個数</th></tr></thead>
+                            <tbody>
+                                <tr><td>死への抵抗</td><td>-</td></tr>
+                            </tbody>
+                        </table>
+                        <table>
+                            <thead><tr><th>メモ</th></tr></thead>
+                            <tbody>
+                                <tr><td>所有者: 靴べらメーカー。このアーティファクトの所有者として名前を刻んだ者以外、所有者が変わることはない。名前を刻む際に、MPとSAN値をそれぞれ1d10減少させる。所有者のPCが死亡した際に、この本を落とす。この本を拾ったものは、CON対抗で負けた場合身体を乗っ取られる。</td></tr>
+                            </tbody>
+                        </table>
+                        <table>
+                            <thead><tr><th>名称</th><th>個数</th></tr></thead>
+                            <tbody>
+                                <tr><td>魔術本: 神殺し</td><td>-</td></tr>
+                            </tbody>
+                        </table>
+                        <table>
+                            <thead><tr><th>メモ</th></tr></thead>
+                            <tbody>
+                                <tr><td>神を殺したあなたには必要がないだろう……</td></tr>
                             </tbody>
                         </table>
                     </div>
@@ -619,6 +694,7 @@
                                 <tr><td>奇妙な1日</td><td>2</td></tr>
                                 <tr><td>間もなく最終電車が出発します。</td><td>2</td></tr>
                                 <tr><td>稲荷の村</td><td>1</td></tr>
+                                <tr><td>在らずの人々</td><td>6</td></tr>
                             </tbody>
                         </table>
                     </div>
@@ -634,8 +710,11 @@
                                 <tr><td>ショゴス</td><td>14</td></tr>
                                 <tr><td>ゴルゴロス</td><td>1</td></tr>
                                 <tr><td>アザトース</td><td>1</td></tr>
-                                <tr><td>シュブ=ニグラス</td><td>1</td></tr>
+                                <tr><td>シュブ=ニグラス</td><td>2</td></tr>
                                 <tr><td>稲荷</td><td>1</td></tr>
+                                <tr><td>風の落し子</td><td>1</td></tr>
+                                <tr><td>クトーニアン</td><td>1</td></tr>
+                                <tr><td>バグ=シャース</td><td>1</td></tr>
                             </tbody>
                         </table>
                     </div>
@@ -655,6 +734,10 @@
                                 <tr><td>奇妙な1日</td><td>クリア</td><td>魔法の羽</td></tr>
                                 <tr><td>間もなく最終電車が出発します。</td><td>クリア</td><td>SAN値回復、運命のダイス</td></tr>
                                 <tr><td>稲荷の村</td><td>クリア</td><td>SAN値回復</td></tr>
+                                <tr><td>在らずの人々</td><td>クリア</td><td>SAN値回復、天候の数珠、魔術写しの短刀</td></tr>
+                                <tr><td>クトーニアン、殺したくない?</td><td>クリア</td><td>SAN値回復</td></tr>
+                                <tr><td>向日葵の咲かない夏 END E</td><td>クリア</td><td>SAN値回復、注射: 死者からの忠誠、魔術本: 死への抵抗</td></tr>
+                                <tr><td>向日葵の咲かない夏 END TRUE</td><td>クリア</td><td>SAN値回復、魔術本: 過剰の回復、魔術本: 神殺し</td></tr>
                             </tbody>
                         </table>
                     </div>
